@@ -6,16 +6,16 @@ html
 
     h2 Developed By
     ul
-      for  in 
-        li= 
+      for director in showdata 
+        li= { showdata.director } 
 
     h2 Starring
     ul
-      for  in 
-        li= 
+      for starring in showdata 
+        li= { showdata.starring }
 
     h2 Seasons
     ul
-      for  in 
+      for season in showdata 
         li
           a(href=`/season/${season.number}`)= `Season ${season.number}`
